@@ -1,10 +1,10 @@
 <?php
 
-$nome = addcslashes($_POST['nome']);
-$email = addcslashes($_POST['email']);
-$telefone = addcslashes($_POST['telefone']);
-$mensagem = addcslashes($_POST['mensagem']);
-
+$nome = addslashes($_POST['nome']);
+$email = addslashes($_POST['email']);
+$telefone = addslashes($_POST['telefone']);
+$mensagem = addslashes($_POST['mensagem']);
+ 
 $to = "eng.renatorosario@rossconstrutech.com";
 
 $subject = "Contato - Contrutora Ross";
@@ -20,7 +20,7 @@ $header =   "From: eng.renatorosario@rossconstrutech.com"."\r\n".
 
 if(mail($to,$subject,$body,$header)){
 
-    echo("E-mail enviado com sucesso!");
+    header('Location: ../confirmacao.html');
 
 }else{
     echo("O e-mail não pode ser enviado");

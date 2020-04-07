@@ -278,7 +278,10 @@
         color:  rgb(241, 241, 241);
     }
 
-
+    .section-cards .container-card .content-box p span{
+        font-weight: bold;
+        color: rgb(255, 236, 151);
+    }
     /*  Prosposta */
     
     .section-proposta {

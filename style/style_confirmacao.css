@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    background: rgb(120,111,112);
+    background: linear-gradient(#252526 0%, rgba(255,255,255,1) 60%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-confirmacao {
+    text-align: center;
+}
+
+.container-confirmacao img {
+    width: 650px;
+    margin: 0 0 2em;
+}
+
+.container-confirmacao p {
+    font-weight: bold;
+    color: rgb(120,111,112);
+    font-size: 1.5em;
+    margin: .5em 0 0;
+}
+
+@media screen and (max-width: 720px) {
+    .container-confirmacao img {
+        width: 300px;
+    }
+
+    .container-confirmacao p {
+        font-size: 1em;
+    }
+}
